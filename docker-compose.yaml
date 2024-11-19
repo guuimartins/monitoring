@@ -1,12 +1,4 @@
-version: '3.8'
-
 services:
-  server:
-    build:
-      dockerfile: Dockerfile
-      context: .
-    ports:
-      - "8090:8090"
   prometheus:
     image: prom/prometheus:v2.45.3
     restart: unless-stopped
